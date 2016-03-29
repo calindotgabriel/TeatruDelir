@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TeatruDelir;
+using TeatruDelir.Core.Controllers;
+using TeatruDelir.Domain.Exception;
 using TeatruDelir.Models;
 
 namespace TeatruDelirTests
