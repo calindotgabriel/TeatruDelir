@@ -28,6 +28,7 @@ import io.freshnotes.domain.event.OnNotePressedEvent;
 import io.freshnotes.domain.event.OnNotesLoadedEvent;
 import io.freshnotes.domain.model.Note;
 import io.freshnotes.fragment.adapter.NoteAdapter;
+import io.freshnotes.utils.KeyboardUtils;
 
 /**
  * Created by motan on 30.10.2015.
@@ -62,7 +63,7 @@ public class ListFragment extends StickyBusFragment implements SearchView.OnQuer
     }
 
     @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflate:))r) {
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.menu_main, menu);
 
         final MenuItem item = menu.findItem(R.id.action_search);
@@ -76,6 +77,7 @@ public class ListFragment extends StickyBusFragment implements SearchView.OnQuer
         super.onViewCreated(view, savedInstanceState);
         MainActivity mainActivity = (MainActivity) getActivity();
         mainActivity.getSupportActionBar().setDisplayShowTitleEnabled(true);
+        KeyboardUtils.hideKeyboard(getActivity());
     }
 
     private void initList(List<Note> notes) {
