@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FreshNotes</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_notes">You have no notes yet!</string>
+    <string name="title">Title</string>
+    <string name="content">Note</string>
+    <string name="share_note">Share CleanNote</string>
+    <string name="action_search">Search</string>
+</resources>
